@@ -50,7 +50,7 @@ curl -X POST http://localhost:4318/v1/traces \
 | **Prometheus**        | http://localhost:9090         | Métricas e alertas                  | -                 |
 | **Collector Metrics** | http://localhost:9464/metrics | Métricas do OpenTelemetry Collector | -                 |
 
-> \* Se defina, se preferir seu próprio usuário e senha
+> \* Defina, se preferir seu próprio usuário e senha
 ---
 
 ## Configuração da Aplicação Java
@@ -144,7 +144,7 @@ Access: Server (default)
 **Opção 1: IDs da Comunidade**
 - Dashboard ID `4701` - JVM (Micrometer)
 - Dashboard ID `11378` - JVM Applications
-- Dashboard ID `14031` - OpenTelemetry APM
+- Dashboard ID `14114` - PostgreSQL
 
 **Opção 2: Dashboards Customizados**
 - Copie o JSON dos dashboards abaixo
@@ -306,7 +306,7 @@ Access: Server (default)
 ```json
 {
   "id": null,
-  "title": "🗄️ Database & JDBC Performance Monitor",
+  "title": "Database & JDBC Performance Monitor",
   "tags": ["hibernate", "jdbc", "database", "performance"],
   "timezone": "browser", 
   "schemaVersion": 39,
